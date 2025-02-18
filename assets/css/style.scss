@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+//header
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px !important;
+    padding: 0px !important;
+    #logo{
+        width: 100px;
+        img{
+            width: 100%;
+        }
+    }
+    #navigation{
+        display: flex;
+        flex-direction: row;
+        ul{
+            margin-top: 10px;
+            display:flex;
+            flex-direction: row;
+            list-style-type: none;
+            li{
+                padding: 10px;
+                a{
+                    display: inline-block;
+                    color: rgb(67, 83, 228);
+                    text-decoration: none;
+                    &:hover{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+//slider
+#slider{
+    width: 100%;
+    height: 670px;
+    background-image: url('../img/slider1.gif');
+    background-attachment: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #maintitle{
+        color: rgba(255, 255, 255, 0.4);
+        letter-spacing: 6px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 40px #000;
+    }
+}
+//after slider
+.title{
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    h1{
+        text-align: center;
+    }
+}
+#profileLink{
+    color: rgb(92, 108, 255);
+    font-weight: bold;
+}
+#afterSlider{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    .information{
+        display: flex;
+        padding: 10px;
+        margin-left: 10px;
+        flex-direction: column;
+        width: 400px;
+        .main{
+            font-weight: bold;
+        }
+       .titleSecond{
+           font-size: 25px;
+           text-align: center;
+           font-weight: bold;
+           color: rgba(92, 108, 255, 0.8);
+       }
+       #text1, #text2{
+           display: none;
+           color: #000;
+           text-indent: 15px;
+       }
+       .readMore{
+        a{
+               text-decoration: none;
+               color:#000;
+               background-color: rgba(92, 108, 255, 0.3);
+               font-weight: bold;
+               padding: 8px 10px;
+               border: 2px  rgba(92, 108, 255, 0.3);
+               border-radius: 8px;
+               &:hover{
+                   color: rgb(67, 83, 228);
+               }
+           }
+       }
+    }
+}
+//profiles
+.bc-color{
+    background-color:rgba(206, 209, 252, 0.336);
+}
+#pet-info-profiles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center !important;
+    width: 100%;
+    .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 38px;
+        margin-bottom: 40px;
+        width: 340px;
+        height: 800px;
+	    overflow-y: scroll;
+        border: 2px solid rgba(189, 189, 189, 0.9);
+        border-radius: 10px 10px;
+        .pet-img{
+            width: 240px;
+            margin-top: 25px;
+            img{
+                border-radius: 10px 10px;
+                width: 100%;
+            }
+        }
+        .pet-name{
+            font-weight: bold;
+            text-align: center;
+        }
+        .title-info{
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .info-list{
+            list-style-type: none;
+            padding-right: 10px;
+            li{
+                padding: 7px;
+                .fa-mars{
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: rgb(67, 83, 228);
+                    padding: 0px !important;
+                    margin: 0px !important;
+                }
+                .fa-venus, .fa-venus-double{
+                    padding: 0px !important;
+                    margin: 0px !important;
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: rgb(235, 83, 167);
+                }
+            }
+            .breed{
+                font-weight: bold;
+            }
+        }
+        .text-pet-info{
+            display: none;
+            padding: 10px;
+        }
+        //button
+        .my-story, #our-story{
+            color:#000;
+            background-color: rgba(92, 108, 255, 0.3);
+            font-weight: bold;
+            padding: 8px 10px !important;
+            margin-bottom: 40px !important;
+            border: 2px  rgba(92, 108, 255, 0.3);
+            border-radius: 8px;
+            &:hover{
+                color: rgb(67, 83, 228);
+            }
+        }
+    }
+}
+//adoption info
+#adoption-info{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    .row{
+        #breed-text{
+            .adopt-title{
+                    font-weight: bold;
+                    color: rgba(67, 83, 228, 0.8);
+            }
+        }
+        #howTo{
+            .adopt-title{
+                font-weight: bold;
+                color: rgba(67, 83, 228, 0.8);
+        }
+        }
+    }
+}
+//shelters and rescues
+#shelter-rescue-form{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    #shelter-and-rescues-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        #shelters{
+            h4{
+                padding-top: 10px;
+                padding-bottom: 5px;
+                color: rgba(67, 83, 228, 0.8);
+                text-shadow: 0px 0px 1px #252525;
+                font-weight: bold;
+            }
+        }
+        #rescues{
+            h4{
+                padding-top: 10px !important;
+                padding-bottom: 5px !important;
+                color: rgba(67, 83, 228, 0.8);
+                text-shadow: 0px 0px 1px #252525;
+                font-weight: bold;
+            }
+        }
+        p{
+            text-indent: 15px;
+        }
+    }
+    //form
+   form {
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       justify-content: space-between;
+       padding: 10px;
+       .row{
+           .col{
+               input[type='text']{
+                   margin-bottom: 10px;
+               }
+               input[type='email']{
+                   margin-bottom: 10px;
+               }
+              }
+              button{
+                  margin-top: 10px;
+              }
+           }
+       }
+   }
+//za formu
+.spanText{
+    color: rgb(255, 0, 0);
+    font-size: 11px;
+}
+.error{
+    border: 2px solid rgb(255, 0, 0);
+}
+//get-involved
+.number{
+    color: rgb(92, 108, 255);
+    font-weight: bold;
+    border: 3px solid rgba(92, 108, 255, 0.8);
+    padding: 0px 15px;
+    border-radius: 50%;
+}
+#getInvolved{
+    margin-bottom: 40px;
+    #threeWays{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 15px;
+        .way{
+            width: 400px;
+            .titleWay{
+                text-align: center;
+                color: rgb(92, 108, 255);
+                font-weight: bold;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+//footer
+footer{
+        width: 100%;
+        padding: 30px;
+        background-color: #252525;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        h5{
+            color: #fff;
+        }
+        #author-text{
+            #linkTextAuthor{
+                text-decoration: none;
+                &:hover{
+                    color: #fff;
+                }
+            }
+       }
+        #other{
+            display: flex;
+            flex-wrap: wrap;
+            a{
+                text-decoration: none;
+                margin-left: 10px;
+                color: rgba(67, 83, 228, 0.8);
+                &:hover{
+                font-weight: bold
+            }
+        }
+    }
+    #copyright{
+        span{
+            color: #fff;
+        }
+    }
+    #socials{
+        display: flex;
+            a{
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+            margin-top: 10px;
+            &:hover{
+                font-weight: bold;
+                color: rgb(67, 83, 228);
+            }
+            i{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+
+
+//media query
+@media (max-width: 456px){
+    //nav
+    #navigation{
+        ul{
+            li{
+                a{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    //after slider
+    #afterSlider{
+        .information{
+        margin: 0px !important;
+        }
+    }
+    //profiles
+    #pet-info-profiles{
+        .item{
+            width: 300px;
+            margin: 0px !important;
+            margin-bottom: 20px !important;
+            .pet-img{
+                width: 230px;
+            }
+        }
+    }
+
+    //footer
+    footer{
+        #other{
+            a{
+                font-size: 13px;
+            }
+        }
+        #copyright{
+            span{
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media(max-width: 1000px){
+    #slider{
+        background-position: center top;
+    }
+}
